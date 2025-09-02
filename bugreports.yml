@@ -137,3 +137,17 @@
     На странице формы будет сообщение "Заказ успешно оформлен", заказ уйдет на сервер
   actual-result: |
     В консоли браузера в Devtools выводится ошибка 500 Internal Server Error
+
+- summary: |
+    При зашрузке страницы магазина возникает ошибка Incorrect use of <label for=FORM_ELEMENT>
+  environment: |
+    Google Chrome	139.0.7258.155 (Официальная сборка) (64 бит)
+    ОС Windows 10
+  steps-to-reproduce: |
+    1. Зайти на главную страницу магазина
+    2. Открыть Devtools через кнопку "F12"
+    3. Нажать на кнопку "Reload the page"
+  expected-result: |
+    Во вкладке "Issues" нет записей об ошибках
+  actual-result: |
+    Во вкладке "Issues" возникает ошибка Incorrect use of <label for=FORM_ELEMENT>
