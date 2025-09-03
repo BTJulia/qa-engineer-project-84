@@ -57,7 +57,7 @@
 
 - summary: |
     Успешный заказ товара
-  status: pass
+  status: fail
 
 - summary: |
     Успешная отчистка корзины
